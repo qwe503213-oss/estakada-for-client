@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭСТАКАДА - Сантехника и электрика по Тульской области</title>
+    <meta name="description" content="ООО ЭСТАКАДА - сантехнические работы в Кимовске, Туле. Монтаж отопления, водоснабжения, канализации. Гарантия. Договор.">
+    <meta name="keywords" content="сантехник Кимовск, отопление Тула, водоснабжение, канализация, монтаж труб, сантехнические работы, электрика">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="container header__container">
+        <div class="header__logo">
+            <img src="logo.png" alt="ЭСТАКАДА" class="logo__img">
+            <div class="logo__text">
+                <span class="logo__name">ЭСТАКАДА</span>
+                <span class="logo__tagline">инженерные коммуникации</span>
+            </div>
+        </div>
+        
+        <nav class="header__nav" id="nav">
+            <a href="#services" class="nav__link">Услуги</a>
+            <a href="#prices" class="nav__link">Цены</a>
+            <a href="#advantages" class="nav__link">Преимущества</a>
+            <a href="#b2b" class="nav__link">Юр. лицам</a>
+            <a href="#gallery" class="nav__link">Работы</a>
+            <a href="#contacts" class="nav__link">Контакты</a>
+        </nav>
+
+        <div class="header__contacts">
+           <a href="tel:+79028439333" class="header__phone header__phone--main">8 (902) 843-93-33</a>
+             <a href="tel:+79531947160" class="header__phone header__phone--add">8 (953) 194-71-60</a>
+            <div class="header__schedule">Пн-Сб: 08:00-18:00, Вс: 08:00-16:00</div>
+        </div>
+
+        <button class="header__burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <h1 class="hero__title">Сантехника и электрика по Тульской области</h1>
+            <p class="hero__subtitle">ООО «ЭСТАКАДА» — профессиональный монтаж инженерных коммуникаций для частных и юридических лиц</p>
+            
+            <ul class="hero__features">
+                <li class="feature">✓ Выезд мастера за 45 минут</li>
+                <li class="feature">✓ Гарантия до 3 лет</li>
+                <li class="feature">✓ Работа по договору с НДС</li>
+            </ul>
+
+            <div class="hero__buttons">
+                <a href="#order" class="btn btn--primary">Рассчитать стоимость</a>
+                <a href="tel:+79531947160" class="btn btn--secondary">Позвонить сейчас</a>
+            </div>
+        </div>
+
+        <form class="hero__form form" id="order">
+            <h2 class="form_title">Бесплатная консультация</h2>
+            <input type="text" class="form__input" placeholder="Ваше имя" name="name" required>
+            <input type="tel" class="form__input" placeholder="Телефон" name="phone" required>
+            <select class="form__input" name="type">
+                <option value="">Тип объекта</option>
+                <option value="flat">Квартира</option>
+                <option value="house">Частный дом</option>
+                <option value="office">Офис</option>
+                <option value="commercial">Коммерция</option>
+            </select>
+            <button type="submit" class="btn btn--primary btn--full">Получить консультацию<label style="display: flex; align-items: center; gap: 8px; margin: 10px 0; font-size: 13px;">
+    <input type="checkbox" name="agree" required>
+    <span>Я согласен на <a href="privacy.html" target="_blank">обработку персональных данных</a></span>
+</label></button>
+            <p class="form__note">Перезвоним в течение 5 минут</p>
+        </form>
+    </div>
+</section>
+
+<!-- SEGMENTATION -->
+<section class="segmentation">
+    <div class="container">
+        <h2 class="section__title">Выберите ваш тип сотрудничества</h2>
+        
+        <div class="segmentation__grid">
+            <div class="segmentation__card" data-target="#services">
+                <div class="segmentation__icon">🏠</div>
+                <h3 class="segmentation__title">Частным клиентам</h3>
+                <ul class="segmentation__list">
+                    <li>Квартиры и частные дома</li>
+                    <li>Аварийный выезд 24/7</li>
+                    <li>Оплата наличными или картой</li>
+                    <li>Рассрочка 0%</li>
+                </ul>
+                <button class="btn btn--primary">Рассчитать стоимость</button>
+            </div>
+
+            <div class="segmentation__card segmentation__card--b2b" data-target="#b2b">
+                <div class="segmentation__icon">🏢</div>
+                <h3 class="segmentation__title">Юридическим лицам</h3>
+                <ul class="segmentation__list">
+                    <li>Офисы, ТЦ, склады, ТСЖ</li>
+                    <li>Работа по договору с НДС</li>
+                    <li>Акты КС-2, КС-3</li>
+                    <li>Отсрочка платежа</li>
+                </ul>
+                <button class="btn btn--primary">Получить КП</button>
+            </div>
+
+            <div class="segmentation__card" data-target="#b2b">
+                <div class="segmentation__icon">🏘️</div>
+                <h3 class="segmentation__title">ТСЖ и УК</h3>
+                <ul class="segmentation__list">
+                    <li>Обслуживание МКД</li>
+                    <li>Аварийные работы</li>
+                    <li>Плановые осмотры</li>
+                    <li>Отчетность</li>
+                </ul>
+                <button class="btn btn--primary">Заключить договор</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section__title">Наши услуги</h2>
+        
+        <div class="services__grid">
+            <div class="service-card">
+                <div class="service-card__icon">🚨</div>
+                <h3 class="service-card__title">Аварийные вызовы</h3>
+                <ul class="service-card__list">
+                    <li>Устранение протечек: от 800 ₽</li>
+                    <li>Ликвидация засоров: от 2000 ₽</li>
+                    <li>Отключение воды: от 1000 ₽</li>
+                    <li>Выезд мастера: 500-1000 ₽</li>
+                </ul>
+                <a href="#order" class="service-card__btn">Заказать</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">🚽</div>
+                <h3 class="service-card__title">Установка сантехники</h3>
+                <ul class="service-card__list">
+                    <li>Унитаз: от 3500 ₽</li>
+                    <li>Раковина: от 2000 ₽</li>
+                    <li>Ванна: от 4000 ₽</li>
+                    <li>Душевая кабина: от 4500 ₽</li>
+                    <li>Смеситель: от 1800 ₽</li>
+                </ul>
+                <a href="#order" class="service-card__btn">Заказать</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">🔧</div>
+                <h3 class="service-card__title">Монтаж труб</h3>
+                <ul class="service-card__list">
+                    <li>Водоснабжение: от 300 ₽/м.п.</li>
+                    <li>Канализация: от 400 ₽/м.п.</li>
+                    <li>Полипропилен: от 150 ₽/стык</li>
+                    <li>Коллектор: от 2000 ₽</li>
+                </ul>
+                <a href="#order" class="service-card__btn">Заказать</a>
+            </div>
+
+            <div class="service-card service-card--featured">
+                <div class="service-card__badge">Популярное</div>
+                <div class="service-card__icon">🔥</div>
+                <h3 class="service-card__title">Отопление</h3>
+                <ul class="service-card__list">
+                    <li>Монтаж радиатора: от 7000 ₽</li>
+                    <li>Настенный котел: от 14000 ₽</li>
+                    <li>Напольный котел: от 15000 ₽</li>
+                    <li>Обвязка котельной: от 50000 ₽</li>
+                </ul>
+                <a href="#order" class="service-card__btn">Заказать</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">💧</div>
+                <h3 class="service-card__title">Водоснабжение</h3>
+                <ul class="service-card__list">
+                    <li>Монтаж точки (ПП): от 4000 ₽</li>
+                    <li>Монтаж точки (металлопласт): от 5000 ₽</li>
+                    <li>Канализация 50мм: от 1500 ₽</li>
+                    <li>Канализация 110мм: от 3000 ₽</li>
+                </ul>
+                <a href="#order" class="service-card__btn">Заказать</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">📋</div>
+                <h3 class="service-card__title">Дополнительно</h3>
+                <ul class="service-card__list">
+                    <li>Водонагреватель: от 3500 ₽</li>
+                    <li>Полотенцесушитель: от 3500 ₽</li>
+                    <li>Фильтр очистки: от 800 ₽</li>
+                    <li>Герметизация: от 200 ₽/м.п.</li>
+                </ul>
+                <a href="#order" class="service-card__btn">Заказать</a>
+            </div>
+        </div>
+
+        <div class="services__cta">
+            <a href="ПРАЙС-ЛИСТ-ЭСТАКАДА.pdf" class="btn btn--outline" download>
+    📥 Скачать полный прайс-лист (PDF)
+</a>
+        </div>
+    </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="advantages" id="advantages">
+    <div class="container">
+        <h2 class="section__title">Почему выбирают ООО «ЭСТАКАДА»</h2>
+        
+        <div class="advantages__grid">
+            <div class="advantage">
+                <div class="advantage__icon">📄</div>
+                <h3 class="advantage__title">Официальная компания</h3>
+                <p class="advantage__text">ООО с полным пакетом документов. Работаем по договору с гарантией.</p>
+            </div>
+
+            <div class="advantage">
+                <div class="advantage__icon">🛡️</div>
+                <h3 class="advantage__title">Гарантия до 5 лет</h3>
+                <p class="advantage__text">На все виды работ предоставляем письменную гарантию.</p>
+            </div>
+
+            <div class="advantage">
+                <div class="advantage__icon">⏱️</div>
+                <h3 class="advantage__title">Быстрый выезд</h3>
+                <p class="advantage__text">Мастер приедет в течение 45 минут в черте города.</p>
+            </div>
+
+            <div class="advantage">
+                <div class="advantage__icon">💰</div>
+                <h3 class="advantage__title">Честные цены</h3>
+                <p class="advantage__text">Фиксируем стоимость до начала работ. Без скрытых платежей.</p>
+            </div>
+
+            <div class="advantage">
+                <div class="advantage__icon">👨‍🔧</div>
+                <h3 class="advantage__title">Опытные мастера</h3>
+                <p class="advantage__text">Стаж работы специалистов от 5 лет. Регулярное обучение.</p>
+            </div>
+
+            <div class="advantage">
+                <div class="advantage__icon">🚚</div>
+                <h3 class="advantage__title">Собственный парк</h3>
+                <p class="advantage__text">Спецавтотранспорт и профессиональное оборудование.</p>
+            </div>
+
+            <div class="advantage">
+                <div class="advantage__icon">📦</div>
+                <h3 class="advantage__title">Материалы со скидкой</h3>
+                <p class="advantage__text">Закупаем материалы у партнеров со скидкой до 20%.</p>
+            </div>
+
+            <div class="advantage">
+                <div class="advantage__icon">🕐</div>
+                <h3 class="advantage__title">Работаем без выходных</h3>
+                <p class="advantage__text">Пн-Сб: 08:00-18:00, Вс: 08:00-16:00. Аварийный выезд 24/7.</p>
+            </div>
+
+            <div class="advantage">
+                <div class="advantage__icon">🏆</div>
+                <h3 class="advantage__title">Работаем с 2023 года</h3>
+                <p class="advantage__text">Более 500 выполненных объектов в Тульской области.</p>
+            </div>
+
+            <div class="advantage">
+                <div class="advantage__icon">📋</div>
+                <h3 class="advantage__title">Полная документация</h3>
+                <p class="advantage__text">Акты, сметы, исполнительная документация для юр. лиц.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICES -->
+<section class="prices" id="prices">
+    <div class="container">
+        <h2 class="section__title">Цены на популярные услуги</h2>
+        
+        <div class="prices__tabs">
+            <button class="prices__tab prices__tab--active" data-tab="emergency">Аварийные работы</button>
+            <button class="prices__tab" data-tab="install">Установка</button>
+            <button class="prices__tab" data-tab="pipes">Трубы</button>
+            <button class="prices__tab" data-tab="heating">Отопление</button>
+        </div>
+
+        <div class="prices__content">
+            <div class="prices__tab-content prices__tab-content--active" data-content="emergency">
+                <table class="prices__table">
+                    <thead>
+                        <tr>
+                            <th>Наименование работы</th>
+                            <th>Ед. изм.</th>
+                            <th>Цена (от)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Выезд мастера (в пределах города)</td>
+                            <td>выезд</td>
+                            <td>500 - 1000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Устранение протечки</td>
+                            <td>точка</td>
+                            <td>800 - 2500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Ликвидация засора (механически)</td>
+                            <td>1 засор</td>
+                            <td>2000 - 3000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Отключение/перекрытие воды на стояке</td>
+                            <td>шт.</td>
+                            <td>1000 - 2000 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="prices__tab-content" data-content="install">
+                <table class="prices__table">
+                    <thead>
+                        <tr>
+                            <th>Наименование работы</th>
+                            <th>Ед. изм.</th>
+                            <th>Цена (от)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Установка напольного унитаза</td>
+                            <td>компл.</td>
+                            <td>3500 - 4500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Установка раковины/мойки</td>
+                            <td>шт.</td>
+                            <td>2000 - 4000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Установка ванны (с подключением)</td>
+                            <td>шт.</td>
+                            <td>4000 - 7000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Установка душевой кабины</td>
+                            <td>компл.</td>
+                            <td>4500 - 9000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Замена/установка смесителя</td>
+                            <td>шт.</td>
+                            <td>1800 - 2500 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="prices__tab-content" data-content="pipes">
+                <table class="prices__table">
+                    <thead>
+                        <tr>
+                            <th>Наименование работы</th>
+                            <th>Ед. изм.</th>
+                            <th>Цена (от)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Прокладка труб водоснабжения</td>
+                            <td>м.п.</td>
+                            <td>300 - 600 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Прокладка труб канализации</td>
+                            <td>м.п.</td>
+                            <td>400 - 700 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж коллектора</td>
+                            <td>шт.</td>
+                            <td>2000 - 4000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж точки (ГВС+ХВС), полипропилен</td>
+                            <td>шт.</td>
+                            <td>4000 - 6000 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="prices__tab-content" data-content="heating">
+                <table class="prices__table">
+                    <thead>
+                        <tr>
+                            <th>Наименование работы</th>
+                            <th>Ед. изм.</th>
+                            <th>Цена (от)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Монтаж радиатора</td>
+                            <td>шт.</td>
+                            <td>7000 - 10000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж настенного котла</td>
+                            <td>шт.</td>
+                            <td>14000 - 20000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж напольного котла</td>
+                            <td>шт.</td>
+                            <td>15000 - 25000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Обвязка котельной</td>
+                            <td>шт.</td>
+                            <td>50000 - 90000 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="prices__note">
+            <p>💡 Выезд мастера входит в стоимость работ, если они выполняются</p>
+            <p>🕐 Работа в нерабочее время (с 20:00 до 08:00, выходные) — +100% к тарифу</p>
+        </div>
+    </div>
+</section>
+
+<!-- B2B -->
+<section class="b2b" id="b2b">
+    <div class="container">
+        <h2 class="section__title">Сотрудничество с юридическими лицами</h2>
+        
+        <div class="b2b__content">
+            <div class="b2b__text">
+                <p class="b2b__intro">ООО «ЭСТАКАДА» предлагает профессиональное обслуживание инженерных систем для организаций</p>
+                
+                <h3 class="b2b__subtitle">Мы работаем с:</h3>
+                <ul class="b2b__list">
+                    <li>✓ Управляющими компаниями и ТСЖ</li>
+                    <li>✓ Офисными центрами и бизнес-центрами</li>
+                    <li>✓ Торговыми комплексами и магазинами</li>
+                    <li>✓ Строительными компаниями</li>
+                    <li>✓ Гостиницами и ресторанами</li>
+                    <li>✓ Производственными предприятиями</li>
+                </ul>
+
+                <h3 class="b2b__subtitle">Документальное сопровождение:</h3>
+                <ul class="b2b__docs">
+                    <li>📄 Договор подряда / обслуживания</li>
+                    <li>📄 Счета, счета-фактуры</li>
+                    <li>📄 Акты КС-2, КС-3 (по запросу)</li>
+                    <li>📄 Исполнительная документация</li>
+                    <li>📄 Гарантийные талоны</li>
+                    <li>📄 Отчеты с фотофиксацией</li>
+                </ul>
+
+                <h3 class="b2b__subtitle">Условия для партнеров:</h3>
+                <ul class="b2b__conditions">
+                    <li>💼 Отсрочка платежа до 30 дней</li>
+                    <li>💼 Персональный менеджер 24/7</li>
+                    <li>💼 Приоритетный выезд (30 мин)</li>
+                    <li>💼 Скидки от объема: 5–15%</li>
+                </ul>
+            </div>
+
+            <form class="b2b__form form" id="b2b-form">
+                <h3 class="form__title">Запросить коммерческое предложение</h3>
+                <input type="text" class="form__input" placeholder="Название организации" name="company" required>
+                <input type="text" class="form__input" placeholder="ИНН" name="inn" required>
+                <input type="text" class="form__input" placeholder="Контактное лицо" name="contact" required>
+                <input type="tel" class="form__input" placeholder="Телефон" name="phone" required>
+                <input type="email" class="form__input" placeholder="Email" name="email" required>
+                <textarea class="form__input form__textarea" placeholder="Описание объекта (площадь, тип работ)" name="message" rows="4"></textarea>
+                <button type="submit" class="btn btn--primary btn--full">Отправить запрос<label style="display: flex; align-items: center; gap: 8px; margin: 10px 0; font-size: 13px;">
+    <input type="checkbox" name="agree" required>
+    <span>Я согласен на <a href="privacy.html" target="_blank">обработку персональных данных</a></span>
+</label></button>
+                <p class="form__note">КП подготовим в течение 2 часов</p>
+            </form>
+        </div>
+
+        <div class="b2b__requisites">
+            <h3 class="b2b__requisites-title">Реквизиты ООО «ЭСТАКАДА»</h3>
+            <div class="b2b__requisites-grid">
+                <div class="requisite">
+                    <span class="requisite__label">ИНН</span>
+                    <span class="requisite__value">7100040779</span>
+                </div>
+                <div class="requisite">
+                    <span class="requisite__label">ОГРН</span>
+                    <span class="requisite__value">1237100009508</span>
+                </div>
+                <div class="requisite">
+                    <span class="requisite__label">Банк</span>
+                    <span class="requisite__value">АО «Тинькофф Банк»</span>
+                </div>
+                <div class="requisite">
+                    <span class="requisite__label">БИК</span>
+                    <span class="requisite__value">044525974</span>
+                </div>
+                <div class="requisite">
+                    <span class="requisite__label">Р/с</span>
+                    <span class="requisite__value">40702810810001447117</span>
+                </div>
+                <div class="requisite">
+                    <span class="requisite__label">ОКПО</span>
+                    <span class="requisite__value">99850318</span>
+                </div>
+            </div>
+            <button class="btn btn--outline" onclick="window.print()">📄 Распечатать реквизиты</button>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <h2 class="section__title">Наши работы</h2>
+        <div class="gallery__grid" id="gallery-grid">
+            <!-- Загружается из gallery.json через JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- TEAM -->
+<section class="team">
+    <div class="container">
+        <h2 class="section__title">Наша команда</h2>
+        <div class="team__grid" id="team-grid">
+            <!-- Загружается из teams.json через JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <h2 class="section__title">Контакты</h2>
+        
+        <div class="contacts__grid">
+            <div class="contacts__info">
+                <div class="contact-item">
+                    <div class="contact-item__icon">📞</div>
+                    <div class="contact-item__content">
+                        <div class="contact-item__label">Основной телефон</div>
+                       <a href="tel:+79028439333" class="contact-item__value">8 (902) 843-93-33</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item__icon">📞</div>
+                    <div class="contact-item__content">
+                        <div class="contact-item__label">Дополнительный</div>
+                        <a href="tel:+79531947160" class="contact-item__value">8 (953) 194-71-60</a> 
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item__icon">📧</div>
+                    <div class="contact-item__content">
+                        <div class="contact-item__label">Email</div>
+                        <a href="mailto:Istakadakim@yandex.ru" class="contact-item__value">Istakadakim@yandex.ru</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item__icon">📍</div>
+                    <div class="contact-item__content">
+                        <div class="contact-item__label">Адрес</div>
+                        <div class="contact-item__value">Тульская обл., г. Кимовск, ул. Бессолова, д.59, офис 1</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item__icon">🕐</div>
+                    <div class="contact-item__content">
+                        <div class="contact-item__label">Режим работы</div>
+                        <div class="contact-item__value">Пн-Сб: 08:00-18:00, Вс: 08:00-16:00</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item__icon">💬</div>
+                    <div class="contact-item__content">
+                        <div class="contact-item__label">Мессенджеры</div>
+                        <div class="contact-item__value">
+                            <a href="https://t.me/estakada_kim" class="messenger-link messenger-telegram" target="_blank">
+                                ✈️ Telegram
+                            </a>
+                            <a href="https://vk.com/im?sel=-123456" class="messenger-link messenger-vk" target="_blank">
+                                💙 VK Мессенджер
+                            </a>
+                            <a href="https://max.ru" class="messenger-link messenger-max" target="_blank" title="Скачайте приложение MAX">
+                                💜 MAX
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts__map">
+    <iframe src="https://yandex.ru/map-widget/v1/?text=Кимовск+Бессолова+59" style="width: 100%; height: 400px; border: 0;"></iframe>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- =================================== -->
+<!-- БЛОК ОТЗЫВОВ КЛИЕНТОВ -->
+<!-- =================================== -->
+<section class="reviews" id="reviews">
+    <div class="container">
+        <div class="reviews__header">
+            <h2 class="section__title">Отзывы наших клиентов</h2>
+            <p class="reviews__subtitle">Реальные истории людей, которые доверили нам свой комфорт. Оставьте свой отзыв — помогите другим сделать правильный выбор!</p>
+        </div>
+
+        <!-- Сетка отзывов -->
+        <div class="reviews__grid" id="reviews-grid">
+            <!-- Отзыв 1 -->
+            <article class="review-card">
+                <div class="review-card__header">
+                    <div class="review-card__avatar">АК</div>
+                    <div class="review-card__meta">
+                        <h4 class="review-card__name">Анна К.</h4>
+                        <p class="review-card__location">г. Тула</p>
+                        <time class="review-card__date" datetime="2024-03-15">15 марта 2024</time>
+                    </div>
+                </div>
+                <div class="review-card__rating" aria-label="Рейтинг 5 из 5">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+                <div class="review-card__content">
+                    <p class="review-card__text">Заказывали монтаж отопления в частном доме. Работу выполнили в срок, без нареканий. Мастера приехали со своим инструментом, всё объяснили. Температура в доме теперь идеальная. Рекомендую!</p>
+                </div>
+                <div class="review-card__footer">
+                    <span class="review-card__service">Услуга: Монтаж системы отопления</span>
+                </div>
+            </article>
+
+            <!-- Отзыв 2 -->
+            <article class="review-card">
+                <div class="review-card__header">
+                    <div class="review-card__avatar">ДП</div>
+                    <div class="review-card__meta">
+                        <h4 class="review-card__name">Дмитрий П.</h4>
+                        <p class="review-card__location">г. Новомосковск</p>
+                        <time class="review-card__date" datetime="2024-02-28">28 февраля 2024</time>
+                    </div>
+                </div>
+                <div class="review-card__rating" aria-label="Рейтинг 5 из 5">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+                <div class="review-card__content">
+                    <p class="review-card__text">Меняли трубы в квартире. Работа аккуратная, мусор за собой убрали. Цена соответствовала смете, никаких доплат «по ходу дела». Сантехник Петр — профессионал, всё сделал быстро.</p>
+                </div>
+                <div class="review-card__footer">
+                    <span class="review-card__service">Услуга: Замена труб водоснабжения</span>
+                </div>
+            </article>
+
+            <!-- Отзыв 3 -->
+            <article class="review-card">
+                <div class="review-card__header">
+                    <div class="review-card__avatar">ЕС</div>
+                    <div class="review-card__meta">
+                        <h4 class="review-card__name">Елена С.</h4>
+                        <p class="review-card__location">г. Кимовск</p>
+                        <time class="review-card__date" datetime="2024-01-20">20 января 2024</time>
+                    </div>
+                </div>
+                <div class="review-card__rating" aria-label="Рейтинг 5 из 5">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+                <div class="review-card__content">
+                    <p class="review-card__text">Устанавливали душевую кабину с гидромассажем. Очень довольна результатом! Кабина работает идеально, все подключения герметичные. Мастера вежливые, пунктуальные. Спасибо!</p>
+                </div>
+                <div class="review-card__footer">
+                    <span class="review-card__service">Услуга: Установка душевой кабины</span>
+                </div>
+            </article>
+        </div>
+
+        <!-- Форма добавления отзыва -->
+        <div class="reviews__form-wrapper">
+            <h3 class="reviews__form-title">Оставить отзыв</h3>
+            <form class="reviews__form" id="review-form">
+                <div class="form__row">
+                    <input type="text" class="form__input" name="review-name" placeholder="Ваше имя *" required>
+                    <input type="text" class="form__input" name="review-location" placeholder="Город *">
+                </div>
+                
+                <div class="form__row">
+                    <select class="form__input" name="review-service" required>
+                        <option value="">Выберите услугу *</option>
+                        <option value="Монтаж отопления">Монтаж отопления</option>
+                        <option value="Замена труб">Замена труб водоснабжения</option>
+                        <option value="Установка сантехники">Установка сантехники</option>
+                        <option value="Канализация">Монтаж канализации</option>
+                        <option value="Электрика">Электромонтажные работы</option>
+                        <option value="Аварийный вызов">Аварийный вызов</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+
+                <div class="form__row">
+                    <label class="form__label">Ваша оценка *</label>
+                    <div class="rating-input" role="radiogroup" aria-label="Оценка от 1 до 5">
+                        <input type="radio" id="star5" name="review-rating" value="5" required><label for="star5">★</label>
+                        <input type="radio" id="star4" name="review-rating" value="4"><label for="star4">★</label>
+                        <input type="radio" id="star3" name="review-rating" value="3"><label for="star3">★</label>
+                        <input type="radio" id="star2" name="review-rating" value="2"><label for="star2">★</label>
+                        <input type="radio" id="star1" name="review-rating" value="1"><label for="star1">★</label>
+                    </div>
+                </div>
+
+                <div class="form__row">
+                    <textarea class="form__input form__textarea" name="review-text" placeholder="Расскажите о вашем опыте работы с нами *" rows="4" required></textarea>
+                </div>
+
+                <label class="form__checkbox">
+                    <input type="checkbox" name="review-agree" required>
+                    <span>Я согласен на <a href="privacy.html" target="_blank">обработку персональных данных</a> и публикацию отзыва</span>
+                </label>
+
+                <button type="submit" class="btn btn--primary btn--full">Отправить отзыв</button>
+                <p class="form__note">Отзыв появится после модерации в течение 24 часов</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__logo">
+                <img src="logo.png" alt="ЭСТАКАДА" class="logo__img">
+                <div class="logo__text">
+                    <span class="logo__name">ЭСТАКАДА</span>
+                    <span class="logo__tagline">инженерные коммуникации</span>
+                </div>
+            </div>
+
+            <div class="footer__nav">
+                <a href="#services" class="footer__link">Услуги</a>
+                <a href="#prices" class="footer__link">Цены</a>
+                <a href="#b2b" class="footer__link">Юр. лицам</a>
+                <a href="#contacts" class="footer__link">Контакты</a>
+            </div>
+
+            <div class="footer__contacts">
+                <a href="tel:+79028439333" class="footer__phone">8 (902) 843-93-33</a>
+                <a href="tel:+79531947160" class="footer__phone">8 (953) 194-71-60</a>
+                <div class="footer__email">Istakadakim@yandex.ru</div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__requisites">
+                ООО «ЭСТАКАДА» | ИНН: 7100040779 | ОГРН: 1237100009508
+            </div>
+            <div class="footer__copyright">
+                © 2026 Все права защищены
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
